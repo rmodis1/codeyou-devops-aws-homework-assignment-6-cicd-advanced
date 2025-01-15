@@ -9,5 +9,3 @@ gem 'rackup'
 gem 'rspec'
 gem 'rubocop'
 gem 'sinatra'
-gem 'rubocop', require: false
-gem 'rspec'
