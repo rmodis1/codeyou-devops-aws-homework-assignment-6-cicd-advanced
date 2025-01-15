@@ -24,5 +24,11 @@ jobs:
     - name: Install dependencies
       run: bundle install
 
+    - name: Install bundler-audit
+      run: gem install bundler-audit
+
+    - name: Run bundler-audit
+      run: bundler-audit check --update
+
     - name: Run tests
       run: bundle exec rspec --init
