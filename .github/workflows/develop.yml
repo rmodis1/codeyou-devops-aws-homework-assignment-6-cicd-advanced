@@ -30,5 +30,8 @@ jobs:
     - name: Run bundler-audit
       run: bundler-audit check --update
 
+    - name: Run linter
+      run: bundle exec rubocop
+
     - name: Run tests
       run: bundle exec rspec --init
