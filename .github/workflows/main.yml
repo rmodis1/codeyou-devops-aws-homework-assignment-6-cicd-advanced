@@ -31,5 +31,5 @@ jobs:
       run: bundler-audit check --update
 
     - name: Run tests
-      run: bundle exec rake test
+      run: bundle exec rspec --init
 
